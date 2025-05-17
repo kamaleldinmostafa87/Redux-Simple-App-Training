@@ -27,7 +27,7 @@ const Counter = () => {
           </p>
           <button onClick={() => dispatch(decrease())}> - Decrease</button>
           <p className="read-the-docs">
-            Click on the Vite and React logos to learn more yes
+            Click on the Vite and React logos to learn more yessss
           </p>
         </>
       ) : (
