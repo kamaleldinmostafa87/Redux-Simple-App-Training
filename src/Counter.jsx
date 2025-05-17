@@ -5,7 +5,7 @@ import { login } from "./auth";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter); // Access counter directly
+  const glopalState = useSelector((state) => state); // Access counter directly
 
   return (
     <>
@@ -18,7 +18,7 @@ const Counter = () => {
           </button>
 
           <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
+            Edit <code>src/App.jsx</code> and save to test HMR I added new
           </p>
           <button onClick={() => dispatch(decrease())}> - Decrease</button>
           <p className="read-the-docs">
