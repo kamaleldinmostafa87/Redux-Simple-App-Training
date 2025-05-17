@@ -2,6 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increase, decrease } from "./counterSlice"; // Import actions directly
 import { login } from "./auth";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { increase, decrease } from "./counterSlice"; // Import actions directly
+import { login } from "./auth";
 
 const Counter = () => {
   const dispatch = useDispatch();
@@ -9,6 +13,7 @@ const Counter = () => {
 
   return (
     <>
+      <button onClick={() => dispatch(login())}>login</button>
       <button onClick={() => dispatch(login())}>login</button>
 
       {glopalState.value.value ? (
