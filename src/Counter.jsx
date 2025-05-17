@@ -23,7 +23,7 @@ const Counter = () => {
           </button>
 
           <p>
-            Edit <code>src/App.jsx</code> and save to test HMR I added new
+            Edit <code>src/App.jsx</code> and save to test HMR I added new yes
           </p>
           <button onClick={() => dispatch(decrease())}> - Decrease</button>
           <p className="read-the-docs">
