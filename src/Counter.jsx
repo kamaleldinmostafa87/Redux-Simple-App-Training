@@ -5,7 +5,7 @@ import { login } from "./auth";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter); // Access counter directly
+  const glopalState = useSelector((state) => state); // Access counter directly
 
   return (
     <>
