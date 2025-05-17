@@ -9,8 +9,8 @@ const Counter = () => {
 
   return (
     <>
-      <button onClick={() => dispatch(login())}>login + 'trains'</button>
-      <a href="">sencod push</a>
+      <button onClick={() => dispatch(login())}>login</button>
+
       {glopalState.value.value ? (
         <>
           <button onClick={() => dispatch(increase())}>
