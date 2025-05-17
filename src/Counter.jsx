@@ -2,6 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increase, decrease } from "./counterSlice"; // Import actions directly
 import { login } from "./auth";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { increase, decrease } from "./counterSlice"; // Import actions directly
+import { login } from "./auth";
 
 const Counter = () => {
   const dispatch = useDispatch();
@@ -10,8 +14,7 @@ const Counter = () => {
   return (
     <>
       <button onClick={() => dispatch(login())}>login</button>
-
-      <a href="">sencod push</a>
+      <button onClick={() => dispatch(login())}>login</button>
 
       {glopalState.value.value ? (
         <>
@@ -20,11 +23,11 @@ const Counter = () => {
           </button>
 
           <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
+            Edit <code>src/App.jsx</code> and save to test HMR I added new yes
           </p>
           <button onClick={() => dispatch(decrease())}> - Decrease</button>
           <p className="read-the-docs">
-            Click on the Vite and React logos to learn more yes dsads
+            Click on the Vite and React logos to learn more yessss
           </p>
         </>
       ) : (
